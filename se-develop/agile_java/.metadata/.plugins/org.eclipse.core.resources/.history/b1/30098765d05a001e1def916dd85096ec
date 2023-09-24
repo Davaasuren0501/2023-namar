@@ -1,0 +1,17 @@
+package studentinfo;
+import junit.framework.TestSuite;
+import studentinfo.CourseSessionTest;
+import studentinfo.DateUtilTest;
+import studentinfo.RosterReporterTest;
+import studentinfo.StudentTest;
+
+public class AllTests {
+	public static TestSuite suite() {
+		TestSuite suite = new TestSuite();
+		suite.addTestSuite(StudentTest.class);
+		suite.addTestSuite(CourseSessionTest.class);
+		suite.addTestSuite(RosterReporterTest.class);;
+		suite.addTestSuite(DateUtilTest.class);
+		return suite;
+	}
+}

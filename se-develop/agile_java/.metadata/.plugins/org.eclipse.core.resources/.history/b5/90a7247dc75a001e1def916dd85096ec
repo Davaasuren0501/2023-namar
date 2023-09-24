@@ -1,0 +1,14 @@
+package com.sd.lesson;
+
+public class Student {
+	String myName;
+
+	public Student(String name) {
+		this.myName = name;
+	}
+
+	public String getName() {
+		return myName;
+	}
+
+}

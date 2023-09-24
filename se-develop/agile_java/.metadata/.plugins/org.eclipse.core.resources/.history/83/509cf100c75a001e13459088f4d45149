@@ -1,0 +1,9 @@
+package com.sd.lesson;
+
+public class Student {
+
+	public Student(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+}
