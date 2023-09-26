@@ -2,7 +2,7 @@ package sis.studentInfo;
 
 
 import java.util.*;
-public class CourseSession {
+public class CourseSession  implements Comparable<CourseSession> {
 	
 	private static int count;
 	
@@ -13,7 +13,7 @@ public class CourseSession {
 
 	private List<Student> allStudents = new ArrayList<Student>();
 
-	public CourseSession (String department , String number , Date startDate) {
+	protected CourseSession (String department , String number , Date startDate) {
 		this.department = department;
 		this.number = number;
 		this.startDate = startDate;
@@ -44,8 +44,11 @@ public class CourseSession {
 	public Student get(int index) {
 		return this.allStudents.get(index);
 	}
+	protected int getSessionLength() {
+		return 16;
+	}
 
-	public Date getStartDate() {
+	protected Date getStartDate() {
 		return this.startDate;
 	}
 
@@ -72,5 +75,11 @@ public class CourseSession {
 	}
 	void setNumberOfCredits(int numberOfCredits) {
 		this.numberOfCredits = numberOfCredits;
+	}
+	public int compareTo(CourseSession that ) {
+		int compare = this.getDepartment().compareTo(that.getDepartment());
+		if (compare == 0)
+			compare = this.getNumber().compareTo(that.getNumber());
+		return compare;
 	}
 }

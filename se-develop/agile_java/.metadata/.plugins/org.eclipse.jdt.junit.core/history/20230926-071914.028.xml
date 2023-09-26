@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CourseSessionTest (1)" project="AgileJava" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="sis.studentInfo.CourseSessionTest" time="0.051">
+    <testcase name="testComparable" classname="sis.studentInfo.CourseSessionTest" time="0.049"/>
+    <testcase name="testCount" classname="sis.studentInfo.CourseSessionTest" time="0.0"/>
+    <testcase name="testCourseDates" classname="sis.studentInfo.CourseSessionTest" time="0.001"/>
+    <testcase name="testCreate" classname="sis.studentInfo.CourseSessionTest" time="0.0"/>
+    <testcase name="testEnrollStudents" classname="sis.studentInfo.CourseSessionTest" time="0.001"/>
+  </testsuite>
+</testrun>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="StudentTest (1)" project="AgileJava" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="sis.studentInfo.StudentTest" time="0.0">
-    <testcase name="testBadStatic" classname="sis.studentInfo.StudentTest" time="0.0"/>
-    <testcase name="testCreate" classname="sis.studentInfo.StudentTest" time="0.0"/>
-  </testsuite>
-</testrun>

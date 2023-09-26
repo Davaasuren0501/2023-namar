@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CourseReportTest" project="AgileJava" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="sis.report.CourseReportTest" time="0.001">
+    <testcase name="testSortStringsInNewList" classname="sis.report.CourseReportTest" time="0.0"/>
+    <testcase name="testSortStringsInPlace" classname="sis.report.CourseReportTest" time="0.0"/>
+    <testcase name="testReport" classname="sis.report.CourseReportTest" time="0.0"/>
+    <testcase name="testStringCompareTo" classname="sis.report.CourseReportTest" time="0.0"/>
+  </testsuite>
+</testrun>

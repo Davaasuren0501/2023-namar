@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="StudentTest (1)" project="AgileJava" tests="8" started="8" failures="0" errors="0" ignored="0">
+  <testsuite name="sis.studentInfo.StudentTest" time="0.001">
+    <testcase name="testBadStatic" classname="sis.studentInfo.StudentTest" time="0.0"/>
+    <testcase name="testCredits" classname="sis.studentInfo.StudentTest" time="0.0"/>
+    <testcase name="testStudentStatus" classname="sis.studentInfo.StudentTest" time="0.0"/>
+    <testcase name="testCreate" classname="sis.studentInfo.StudentTest" time="0.001"/>
+    <testcase name="testInState" classname="sis.studentInfo.StudentTest" time="0.0"/>
+    <testcase name="testCalculateHonorsStudentGpa" classname="sis.studentInfo.StudentTest" time="0.0"/>
+    <testcase name="testFullTime" classname="sis.studentInfo.StudentTest" time="0.0"/>
+    <testcase name="testCalculateGpa" classname="sis.studentInfo.StudentTest" time="0.0"/>
+  </testsuite>
+</testrun>
