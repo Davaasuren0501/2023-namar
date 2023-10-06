@@ -3,6 +3,11 @@ import java.util.*;
 public class Student {
 	private String name;
 	private int credits;
+	
+	private String firstName;
+	private String middleName;
+	private String lastName;
+	
 	static final int CREDITS_REQUIRED_FOR_FULL_TIME = 12;
 	static final String IN_STATE = "CO"; //Colorado 
 	private String state = "";
@@ -24,14 +29,36 @@ public class Student {
 			return points;
 		}
 	};
+	public String getFirstName() {
+		return firstName;
+	}
+	public String getMiddleName() {
+		return middleName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
 	private boolean isHonors = false;
 	
-	public Student(String name) {
-		this.name = name;
+	public Student(String fullName) {
+		this.name = fullName;
 		credits = 0;
 	}
 	void setHonors() {
 		isHonors = true;
+	}
+	
+	private void setName(List<String> nameParts) {
+		if (nameParts.size() == 1)
+			this.lastName = nameParts.get(0);
+		else if (nameParts.size() == 2) {
+			this.firstName = nameParts.get(0);
+			this.lastName = nameParts.get(1);
+		}else if (nameParts.size() == 3) {
+			this.firstName = nameParts.get(0);
+			this.middleName = nameParts.get(1);
+			this.lastName = nameParts.get(2);
+		}
 	}
 
 	public String getName(){

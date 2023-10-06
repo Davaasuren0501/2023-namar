@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="RosterReportTest" project="AgileJava" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="sis.report.RosterReportTest" time="0.071">
-    <testcase name="testRosterReport" classname="sis.report.RosterReportTest" time="0.071"/>
-  </testsuite>
-</testrun>

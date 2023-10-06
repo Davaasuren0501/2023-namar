@@ -2,4 +2,7 @@
 <dirs>
     <entry loc="/snap/eclipse/71/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.7.v20230425-1502" stamp="1695035841000"/>
     <entry loc="/snap/eclipse/71/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.7.v20230425-1502/jre" stamp="1695035841000"/>
+    <entry loc="/home/davaa/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.8.v20230831-1047" stamp="1695738627416"/>
+    <entry loc="/home/davaa/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.8.v20230831-1047/jre" stamp="1695738627416"/>
+    <entry loc="/usr/lib/jvm/java-11-openjdk-amd64" stamp="1695869513716"/>
 </dirs>

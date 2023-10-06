@@ -1,7 +1,0 @@
-package com.sd.lesson;
-
-import junit.framework.TestCase;
-
-public class StudentTest extends TestCase {
-
-}

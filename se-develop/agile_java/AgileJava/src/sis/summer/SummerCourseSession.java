@@ -2,15 +2,15 @@ package sis.summer;
 import java.util.*;
 import sis.studentInfo.*;
 
-public class SummerCourseSession  extends CourseSession {
+public class SummerCourseSession extends Session {
 	@Override
 	protected int getSessionLength() {
 		return 8;
 	}
 	public static SummerCourseSession create(
-		String department,
-		String number,
-		Date startDate) {
+			String department,
+			String number,
+			Date startDate) {
 		return new SummerCourseSession(department, number, startDate);
 	}
 	private SummerCourseSession(

@@ -1,5 +1,0 @@
-package com.sd.lesson;
-
-public class StudentTest extends TestCase {
-
-}

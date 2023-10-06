@@ -10,6 +10,7 @@ public class AllTests {
 		TestSuite suite = new TestSuite();
 		suite.addTest(sis.report.AllTests.suite());
 		suite.addTest(sis.studentInfo.AllTests.suite());
+		suite.addTest(sis.summer.AllTests.suite());
 		return suite;
 	}
 }
