@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="sis.summer.SummerCourseSessionTest"/>
+    <fullyQualifiedTypeName name="sis.studentInfo.PerformanceTest"/>
+    <fullyQualifiedTypeName name="sis.studentInfo.SessionTest"/>
+    <fullyQualifiedTypeName name="sis.studentInfo.ScorerTest"/>
+    <fullyQualifiedTypeName name="java.net.MalformedURLException"/>
+    <fullyQualifiedTypeName name="com.davaa.desktop.guest.Login"/>
+    <fullyQualifiedTypeName name="com.davaa.desktop.database.PostgreSQLConnection"/>
+    <fullyQualifiedTypeName name="javax.swing.JDesktopPane"/>
+</qualifiedTypeNameHistroy>
