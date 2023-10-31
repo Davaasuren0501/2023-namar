@@ -160,7 +160,7 @@ public class SignUp extends javax.swing.JFrame {
         jButton2.setText("Login");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                jButton2ActionPerformed();
             }
         });
 
@@ -238,7 +238,7 @@ public class SignUp extends javax.swing.JFrame {
 
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent event) {
-                System.out.println("call sign in");
+                System.out.println("call sign up");
                 if(jTextField1.getText().length() > 0 && jTextField2.getText().length() > 0 && jPasswordField1.getText().length() > 0) {
                     System.out.println(jTextField1.getText());
                     System.out.println(jTextField2.getText());
@@ -246,7 +246,9 @@ public class SignUp extends javax.swing.JFrame {
                     int rowCount = PostgreSQLConnection._functionSignUp(jTextField1.getText(),jTextField2.getText(), Arrays.toString(jPasswordField1.getPassword()));
                     if(rowCount>0) {
                         System.out.println("Register success");
+                        JOptionPane.showMessageDialog(jPanel1,"Success");
                         System.out.println(rowCount);
+                        jButton2ActionPerformed();
                     } else {
                         System.out.println("Can't sign Up");
                         System.out.println(rowCount);
@@ -259,7 +261,7 @@ public class SignUp extends javax.swing.JFrame {
         });
     }
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButton2ActionPerformed() {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         Login LoginFrame = new Login();
         LoginFrame.setVisible(true);

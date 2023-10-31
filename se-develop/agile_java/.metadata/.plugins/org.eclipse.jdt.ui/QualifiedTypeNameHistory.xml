@@ -7,5 +7,7 @@
     <fullyQualifiedTypeName name="java.net.MalformedURLException"/>
     <fullyQualifiedTypeName name="com.davaa.desktop.guest.Login"/>
     <fullyQualifiedTypeName name="com.davaa.desktop.database.PostgreSQLConnection"/>
+    <fullyQualifiedTypeName name="com.davaa.desktop.client.list.List"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="javax.swing.JDesktopPane"/>
 </qualifiedTypeNameHistroy>

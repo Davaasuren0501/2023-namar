@@ -33,30 +33,43 @@
     </repository>
   </repositories> -->
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
+	  <dependencies>
+	    <dependency>
+	      <groupId>junit</groupId>
+	      <artifactId>junit</artifactId>
+	      <version>3.8.1</version>
+	      <scope>test</scope>
+	    </dependency>
     <!-- Mapbox SDK dependency -->
     <!-- <dependency>
         <groupId>com.mapbox.mapboxsdk</groupId>
         <artifactId>mapbox-android-sdk</artifactId>
         <version>10.16.0</version>
     </dependency> -->
-    <dependency>
-      <groupId>org.jxmapviewer</groupId>
-      <artifactId>jxmapviewer2</artifactId>
-      <version>2.5</version>
-    </dependency>
+	    <dependency>
+	      <groupId>org.jxmapviewer</groupId>
+	      <artifactId>jxmapviewer2</artifactId>
+	      <version>2.5</version>
+	    </dependency>
 
-      <dependency>
-          <groupId>org.postgresql</groupId>
-          <artifactId>postgresql</artifactId>
-          <version>42.6.0</version>
-      </dependency>
+	  <dependency>
+	      <groupId>org.postgresql</groupId>
+	      <artifactId>postgresql</artifactId>
+	      <version>42.6.0</version>
+	  </dependency>
+  
+	   <dependency>
+	    <groupId>com.miglayout</groupId>
+	    <artifactId>miglayout-swing</artifactId>
+	    <version>11.2</version>
+	</dependency>
+	
+<dependency>
+	<groupId>org.swinglabs.swingx</groupId>
+	<artifactId>swingx-all</artifactId>
+	<version>1.6.5-1</version>
+</dependency>
+
 
       <!-- Thanks for using https://jar-download.com -->
 

@@ -1,5 +1,6 @@
 package com.davaa.desktop.guest;
 
+import com.davaa.desktop.App;
 import com.davaa.desktop.client.ClientMain;
 import com.davaa.desktop.database.PostgreSQLConnection;
 
@@ -7,6 +8,8 @@ import javax.swing.*;
 
 import java.awt.EventQueue;
 import java.util.Arrays;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 public class Login  extends javax.swing.JFrame {
 
@@ -27,7 +30,6 @@ public class Login  extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField TFPassword;
     private javax.swing.JTextField TFEmail;
-    
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -42,11 +44,11 @@ public class Login  extends javax.swing.JFrame {
 	}
 
     public Login() {
+		
+//		System.out.println(App.rb.getString("greeting"));
         initComponents();
     }
     private void initComponents() {
-
-        String userDir = System.getProperty("user.dir");
 
         jPanel1 = new javax.swing.JPanel();
         Right = new javax.swing.JPanel();
@@ -64,7 +66,7 @@ public class Login  extends javax.swing.JFrame {
         BtnSignUp = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Sign In");
+        setTitle(App.rb.getString("sign_in"));
         setPreferredSize(new java.awt.Dimension(800, 500));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -117,29 +119,31 @@ public class Login  extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 102));
-        jLabel1.setText("Sign In");
+        jLabel1.setText(App.rb.getString("sign_in"));
 
         jLabel2.setBackground(new java.awt.Color(102, 102, 102));
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel2.setText("Email");
+        jLabel2.setText(App.rb.getString("email"));
 
         TFEmail.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         TFEmail.setForeground(new java.awt.Color(102, 102, 102));
+        TFEmail.setText("davaasuren@gmail.com");
+        TFPassword.setText("davka0501");
 
         jLabel3.setBackground(new java.awt.Color(102, 102, 102));
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel3.setText("Password");
+        jLabel3.setText(App.rb.getString("password"));
 
         BtnSignIn.setBackground(new java.awt.Color(0, 102, 102));
         BtnSignIn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         BtnSignIn.setForeground(new java.awt.Color(255, 255, 255));
-        BtnSignIn.setText("SignIn");
+        BtnSignIn.setText(App.rb.getString("sign_in"));
 
-        jLabel4.setText("I don't have an account");
+        jLabel4.setText(App.rb.getString("message_signin"));
 
         BtnSignUp.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         BtnSignUp.setForeground(new java.awt.Color(255, 51, 51));
-        BtnSignUp.setText("Sign Up");
+        BtnSignUp.setText(App.rb.getString("sign_up"));
 
         javax.swing.GroupLayout LeftLayout = new javax.swing.GroupLayout(Left);
         Left.setLayout(LeftLayout);
@@ -218,7 +222,7 @@ public class Login  extends javax.swing.JFrame {
                     System.out.println(TFPassword.getPassword());
                     int rowCount = PostgreSQLConnection._functionLogin(TFEmail.getText(), Arrays.toString(TFPassword.getPassword()));
                     if( rowCount > 0 ) {
-                        JOptionPane.showMessageDialog(jPanel1,"Success login");
+                        JOptionPane.showMessageDialog(jPanel1,App.rb.getString("success_login"));
                         ActionSignInButton();
                     } else {
                         JOptionPane.showMessageDialog(jPanel1,"Sorry, Password wrong or you are not registered");
@@ -241,16 +245,12 @@ public class Login  extends javax.swing.JFrame {
     private void ActionSignInButton(){
         ClientMain pageClientMain = new ClientMain();
         pageClientMain.setVisible(true);
-        pageClientMain.pack();
-        pageClientMain.setLocationRelativeTo(null);
         this.dispose();
     }
 
     private void ActionSingUpButton(java.awt.event.ActionEvent evt) {
         SignUp pageSignUp = new SignUp();
         pageSignUp.setVisible(true);
-        pageSignUp.pack();
-        pageSignUp.setLocationRelativeTo(null);
         this.dispose();
     }
 }
