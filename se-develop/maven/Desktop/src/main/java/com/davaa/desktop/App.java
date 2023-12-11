@@ -7,6 +7,7 @@ import javax.swing.*;
 import com.davaa.desktop.client.ClientMain;
 import com.davaa.desktop.database.PostgreSQLConnection;
 import com.davaa.desktop.guest.Login;
+
 public class App extends JFrame {
 
 	private static final long serialVersionUID = 1L;

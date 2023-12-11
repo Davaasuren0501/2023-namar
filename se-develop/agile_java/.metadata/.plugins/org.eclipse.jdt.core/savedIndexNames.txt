@@ -1,17 +1,27 @@
 INDEX VERSION 1.134+/home/davaa/source/2023-namar/se-develop/agile_java/.metadata/.plugins/org.eclipse.jdt.core
+1535352428.index
 2800883531.index
+3893392656.index
 1484670633.index
+225498926.index
 676832784.index
+548775986.index
+3698524909.index
 2332644622.index
 4005327059.index
 2849722185.index
 516181205.index
 3294601535.index
+293057414.index
+2050740079.index
 1865797976.index
 1431136515.index
 752738079.index
+4110415226.index
 4142428961.index
 2159879703.index
+3061272089.index
 2399691484.index
 616417981.index
+998049532.index
 49857837.index

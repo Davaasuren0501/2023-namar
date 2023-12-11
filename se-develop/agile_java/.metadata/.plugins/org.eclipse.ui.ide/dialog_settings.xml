@@ -6,6 +6,10 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/davaa/Desktop/AppWeb"/>
+			<item value="/home/davaa/source/2023-namar/se-develop/git/Hospital-Management-Using-Servlets/WebProject"/>
+			<item value="/home/davaa/source/2023-namar/se-develop/my-webapp"/>
+			<item value="/home/davaa/flatlaf-dashboard"/>
 			<item value="/home/davaa/source/2023-namar/se-develop/maven/Desktop"/>
 			<item value="/home/davaa/source/2023-namar/se-develop/maven/maven_Project"/>
 		</list>
