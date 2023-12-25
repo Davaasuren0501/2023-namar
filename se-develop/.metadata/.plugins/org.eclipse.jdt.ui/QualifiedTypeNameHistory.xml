@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="db.DBUtil"/>
+    <fullyQualifiedTypeName name="Model.Product"/>
+    <fullyQualifiedTypeName name="Model.Supplier"/>
+    <fullyQualifiedTypeName name="db.DbQuery"/>
+    <fullyQualifiedTypeName name="controller.MyController"/>
+</qualifiedTypeNameHistroy>

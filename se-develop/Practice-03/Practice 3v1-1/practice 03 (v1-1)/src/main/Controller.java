@@ -65,11 +65,17 @@ public class Controller {
 		if (deviceID == null) {
 			throw new NullPointerException();
 		}
+		System.out.println("success");
+		System.out.println(deviceID.equals(""));
+		System.out.println(deviceID.length()!=4);
+		System.out.println(deviceID.matches(DIGITS_MASK));
 		
-		if (deviceID.equals("") || deviceID.length()!=4  ||  deviceID.matches(DIGITS_MASK)) {
+		if (deviceID.equals("") || deviceID.length()!=4  || deviceID.matches(DIGITS_MASK)) {
 			throw new IllegalArgumentException();
 		}
 
+//
+//
 		if (findDeviceIDInList(deviceID)) {
 			throw new IllegalArgumentException();
 		}
@@ -90,6 +96,7 @@ public class Controller {
 			}
 			nextIndex++;
 		}
+		
 		
 		return (inputsOk);
 	}

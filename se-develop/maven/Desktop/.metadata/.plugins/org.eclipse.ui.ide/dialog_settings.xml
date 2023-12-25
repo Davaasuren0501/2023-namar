@@ -6,7 +6,17 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/davaa/source/2023-namar/se-develop"/>
+			<item value="/home/davaa/source/sedevelopment"/>
+			<item value="/home/davaa/source/2023-namar/se-develop/agile_java"/>
 			<item value="/home/davaa/source/2023-namar/se-develop/maven/Desktop"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.wb.rcp.project.wizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.wb"/>
+			<item value="org.eclipse.wb/org.eclipse.wb.rcp"/>
 		</list>
 	</section>
 </section>

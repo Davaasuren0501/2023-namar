@@ -26,9 +26,21 @@ public class ControllerTest {
 	
 	@Test
 	public void testAddFistValidDeviceSucceeds() {
-		assertTrue("Add device should succeed", myApp.addDevice(ControlDeviceType.CONTROLDEVICE_FAN_DRIVER, "1111", 0, 100, 20, 50));
-		assertTrue("Device id=1111 should be in list", myApp.isDeviceInList("1111"));
-		assertEquals("There should be 1 device in list of controlled devices", myApp.getNumDevices(), 1);
+		assertTrue("1111 ID утгийг хоосон жагсаалтанд нэмэх", myApp.addDevice(ControlDeviceType.CONTROLDEVICE_FAN_DRIVER, "1111", 2, 5, 3,4));
+		assertTrue("1111 ID утга жагсаалтанд байгаа эсэх", myApp.isDeviceInList("1111"));
+		assertEquals("Жагсаатанд  бүртгэлтэй төхөөрөмж байгаа эсэх", myApp.getNumDevices(), 1);
+		assertEquals("Жагсаалт дүүрэн байгаа эсэх", myApp.getNumDevices(), 6);
+		assertTrue("Хоосон ID-тай төхөөрөмжийн бүртгэл үүсгэж болох эсэх", myApp.addDevice(ControlDeviceType.CONTROLDEVICE_FAN_DRIVER, "", 2, 5, 3,4));
+		assertTrue("Дуын төрөлтэй төхөөрөмж үүсгэж болох эсэх", myApp.addDevice("Device 01", "" , 2, 5, 3,4));
+		assertTrue("Сөрөг ID (Жишээ нь -1111 ) төхөөрөмж үүсгэж болох эсэх", myApp.addDevice(ControlDeviceType.CONTROLDEVICE_FAN_DRIVER, "-1111", 2, 5, 3,4));
+		assertTrue("5 оронтой ID төхөөрөмж үүсгэж болох эсэх", myApp.addDevice(ControlDeviceType.CONTROLDEVICE_FAN_DRIVER, "11111", 2, 5, 3,4));
+		assertTrue("Үсэг тоо холилдсон ID  төхөөрөмж үүсгэж болох эсэх", myApp.addDevice(ControlDeviceType.CONTROLDEVICE_FAN_DRIVER, "A111", 2, 5, 3,4));
+		assertTrue("Сөрөг утгатай operating-той бүртгэл үүсгэж болох эсэх", myApp.addDevice(ControlDeviceType.CONTROLDEVICE_FAN_DRIVER, "1111", -2, 5, 3,4));
+		assertTrue("1111  ID төхөөрөмжийг устгаж болох эсэх", myApp.removeDevice("1111"));
+		assertTrue("ID-ны урт хоосон зай аваад устгаж болох эсэх", myApp.removeDevice(" 1111"));
+		assertTrue("Тухайн бүртгэл үүсгэх ID жагсаалтанд байгаа эсэх", myApp.addDevice(ControlDeviceType.CONTROLDEVICE_FAN_DRIVER, "1111", 2, 5, 3,4));
+		assertTrue("Төхөөрөмжийн safeMin нь sageMax их утгатай бүртгэл үүсгэж болох эсэх", myApp.addDevice(ControlDeviceType.CONTROLDEVICE_FAN_DRIVER, "1111", 6, 5, 3,4));
+		assertTrue("Төхөөрөмжийн operatingMin нь operationMax их утгатай бүртгэл үүсгэж болох эсэх", myApp.addDevice(ControlDeviceType.CONTROLDEVICE_FAN_DRIVER, "1111", 2, 5, 7,4));
 	}
 
 
